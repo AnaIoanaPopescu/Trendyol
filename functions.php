@@ -37,26 +37,26 @@ function template_header($title) {
             <div class="content-wrapper" style="display: flex; align-items: left; justify-content: space-between;">
                 <div style="display: flex; align-items: left;">
                     <!-- Logo -->
-                    <img src="imgs/logo1.png" alt="Logo Aux Trésors Gourmands" style="height: 75px; margin-right: 5px; margin-left: -60px;">
+                    <img src="imgs/logo1.png" alt="Logo" style="height: 75px; margin-right: 5px; margin-left: -60px;">
                     <!-- Site Name -->
-                    <h1 style="margin: 0;">Aux Trésors Gourmands</h1>
+                    <h1 style="margin: 0;">Trendyall</h1>
                 </div>
                 <!-- Navigation -->
                 <nav>
-                    <a href="index.php">Page d'accueil</a>
-                    <a href="index.php?page=products">Magasin</a>
+                    <a href="index.php">Home page</a>
+                    <a href="index.php?page=products">Shop</a>
 EOT;
 
     if (isset($_SESSION['user_id'])) {
         $username = htmlspecialchars($_SESSION['username']);
         echo <<<EOT
-                    <a href="#">Bienvenue, $username</a>
-                    <a href="logout.php">Déconnexion</a>
+                    <a href="#">Welcome, $username</a>
+                    <a href="logout.php">Disconnection</a>
 EOT;
     } else {
         echo <<<EOT
-                    <a href="login.php">Connexion</a>
-                    <a href="register.php">Créer un compte</a>
+                    <a href="login.php">Connection</a>
+                    <a href="register.php">Create an account</a>
 EOT;
     }
     echo <<<EOT
@@ -88,10 +88,10 @@ function template_footer() {
         </main>
         <footer style="text-align: center; padding: 20px 0; border-top: 1px solid #EEEEEE;">
             <div>
-                <p style="margin: 0;">&copy; 2025 <strong>Aux Trésors Gourmands</strong>. Tous droits réservés.</p>
-                <p style="margin: 0; font-style: italic;">Votre destination pour des saveurs uniques et authentiques !</p>
+                <p style="margin: 0;">&copy; 2025 <strong>Trendyall</strong>. All rights reserved.</p>
+                <p style="margin: 0; font-style: italic;">Your destination for unique style!</p>
                 <!-- Logo below the text -->
-                <img src="imgs/logo.jpg" alt="Logo Aux Trésors Gourmands" style="height: 120px; margin-top: 10px;">
+                <img src="imgs/logo.jpg" alt="Logo" style="height: 120px; margin-top: 10px;">
             </div>
         </footer>
         </body>
