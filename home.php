@@ -142,7 +142,7 @@ template_header('Home')
 </div>
 
 <div class="recentlyadded content-wrapper">
-    <h2>Produits récemment ajoutés</h2>
+    <h2>Recently Added Products</h2>
     <div class="products">
         <?php foreach ($recently_added_products as $product): ?>
         <a href="index.php?page=product&id=<?=$product['id']?>" class="product">
