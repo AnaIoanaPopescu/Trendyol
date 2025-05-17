@@ -257,5 +257,3 @@ h1 {
 </div>
 
 <?=template_footer()?>
-
-
